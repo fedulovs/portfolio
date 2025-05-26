@@ -11,15 +11,13 @@ export const GlobalStyle = createGlobalStyle`
     background: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.text};
     transition: background 0.3s, color 0.3s;
+    scroll-behavior: smooth;
   }
 
   body {
     min-height: 100vh;
     min-width: 100vw;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
   * {
@@ -48,9 +46,5 @@ export const GlobalStyle = createGlobalStyle`
   main {
     width: 100vw;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 `;

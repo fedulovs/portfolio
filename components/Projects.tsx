@@ -1,12 +1,12 @@
 import React from 'react';
 import { SlideInFromLeft } from './slideInFromLeft';
 
-const Experience = () => {
+const Projects = () => {
     return (
         <SlideInFromLeft>
-            <div>Experience</div>
+            <div>Projects</div>
         </SlideInFromLeft>
     );
 };
 
-export default Experience;
+export default Projects;

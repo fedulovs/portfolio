@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import AlignedTopLeft from './AlignedTopLeft';
+import { SlideInFromLeft } from './slideInFromLeft';
+import Social from './Social';
 
-const SpacedIntro = styled(AlignedTopLeft)`
+const SpacedIntro = styled.div`
     h1 {
         font-size: 2.6rem;
         font-weight: 600;
@@ -19,11 +20,14 @@ const SpacedIntro = styled(AlignedTopLeft)`
 `;
 
 const Intro = () => (
-    <SpacedIntro>
-        <h1>Sergey Fedulov</h1>
-        <h2>Web Developer</h2>
-        <p>React | Typescript</p>
-    </SpacedIntro>
+    <SlideInFromLeft>
+        <SpacedIntro>
+            <h1>Sergey Fedulov</h1>
+            <h2>Web Developer</h2>
+            <p>React | Typescript</p>
+        </SpacedIntro>
+        <Social />
+    </SlideInFromLeft>
 );
 
 export default Intro;

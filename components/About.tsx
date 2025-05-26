@@ -1,9 +1,9 @@
 import React from 'react';
-import AlignedTopLeft from './AlignedTopLeft';
+import { SlideInFromLeft } from './slideInFromLeft';
 
 const About = () => {
     return (
-        <AlignedTopLeft>
+        <SlideInFromLeft>
             <p>
                 👨‍💻 I&apos;m an engineer with a passion for creating intuitive
                 web applications. My background in Quality Assurance provides a
@@ -12,7 +12,7 @@ const About = () => {
                 QA practices into the development process, I strive to maintain
                 high standards in user experience.
             </p>
-        </AlignedTopLeft>
+        </SlideInFromLeft>
     );
 };
 
