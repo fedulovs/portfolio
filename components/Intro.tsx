@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SlideInFromLeft } from './slideInFromLeft';
+import { SlideInFromLeft } from './SlideInFromLeft';
 import Social from './Social';
 
 const SpacedIntro = styled.div`
@@ -18,6 +18,7 @@ const SpacedIntro = styled.div`
     }
     p {
         margin-top: 0;
+        margin-bottom: 0.5rem;
     }
 `;
 
@@ -25,8 +26,8 @@ const Intro = () => (
     <SlideInFromLeft>
         <SpacedIntro>
             <h1>Sergey Fedulov</h1>
-            <h2>Web Developer</h2>
-            <p>React | Typescript</p>
+            <h2>Software Engineer (QA & Frontend)</h2>
+            <p>Creating smooth web apps with QA eye for quality</p>
         </SpacedIntro>
         <Social />
     </SlideInFromLeft>

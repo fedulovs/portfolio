@@ -22,9 +22,7 @@ export const Home = () => (
         <Section id='projects'>
             <Projects />
         </Section>
-        <Section>
-            <ThemeToggle />
-        </Section>
+        <ThemeToggle />
     </>
 );
 
