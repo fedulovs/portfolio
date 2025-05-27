@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideInFromLeft } from './slideInFromLeft';
+import { SlideInFromLeft } from './SlideInFromLeft';
 
 const About = () => {
     return (
