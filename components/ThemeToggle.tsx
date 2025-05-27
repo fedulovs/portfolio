@@ -2,6 +2,7 @@
 import { useTheme } from './ThemeProvider';
 import styled from 'styled-components';
 import { FiSun, FiMoon } from 'react-icons/fi';
+import FloatingSwitch from './FloatingSwitch';
 
 const ToggleButton = styled.button`
     background: none;
@@ -40,21 +41,23 @@ export default function ThemeToggle() {
 
     return (
         <BottomRightWrapper>
-            <ToggleButton
-                onClick={toggleTheme}
-                aria-label={
-                    theme === 'light'
-                        ? 'Switch to dark theme'
-                        : 'Switch to light theme'
-                }
-                title={
-                    theme === 'light'
-                        ? 'Switch to dark theme'
-                        : 'Switch to light theme'
-                }
-            >
-                {theme === 'light' ? <FiMoon /> : <FiSun />}
-            </ToggleButton>
+            <FloatingSwitch>
+                <ToggleButton
+                    onClick={toggleTheme}
+                    aria-label={
+                        theme === 'light'
+                            ? 'Switch to dark theme'
+                            : 'Switch to light theme'
+                    }
+                    title={
+                        theme === 'light'
+                            ? 'Switch to dark theme'
+                            : 'Switch to light theme'
+                    }
+                >
+                    {theme === 'light' ? <FiMoon /> : <FiSun />}
+                </ToggleButton>
+            </FloatingSwitch>
         </BottomRightWrapper>
     );
 }
