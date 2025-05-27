@@ -8,8 +8,8 @@ const BottomLeftWrapper = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     min-height: 60px;
 `;
 
@@ -87,7 +87,7 @@ export default function Social() {
                         rel='noopener noreferrer'
                         aria-label={link.label}
                         $visible={inView}
-                        $delay={i * 120}
+                        $delay={i * 160} /* Delay variable for icons */
                         tabIndex={0}
                     >
                         {link.icon}

@@ -4,6 +4,8 @@ import { SlideInFromLeft } from './slideInFromLeft';
 import Social from './Social';
 
 const SpacedIntro = styled.div`
+    text-align: center;
+
     h1 {
         font-size: 2.6rem;
         font-weight: 600;
