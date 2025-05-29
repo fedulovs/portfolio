@@ -72,9 +72,13 @@ const About = () => (
                     <FaToolbox />
                 </IconStyled>
                 <p>
-                    With experience in both the social media and fintech
-                    sectors, I have worked as a solo QA and as part of larger,
-                    cross-functional teams. My technical skills include{' '}
+                    With experience in the <Skill>ed-tech</Skill>,{' '}
+                    <Skill>social media</Skill>, and <Skill>fintech</Skill>{' '}
+                    sectors, I have worked both as a solo QA and as part of
+                    larger teams. Having worked extensively on{' '}
+                    <Skill>mobile applications</Skill>, I always make{' '}
+                    <Skill>responsiveness</Skill> and solid <Skill>UX</Skill> a
+                    priority in every project. My technical skills include{' '}
                     <Skill>JavaScript/TypeScript</Skill>, <Skill>React</Skill>,{' '}
                     <Skill>HTML5 & CSS3</Skill>, and <Skill>Playwright</Skill>.
                 </p>
