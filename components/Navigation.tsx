@@ -98,7 +98,6 @@ const ActiveLine = styled.div<{
         left 0.36s cubic-bezier(0.4, 0.14, 0.3, 1),
         width 0.36s cubic-bezier(0.4, 0.14, 0.3, 1);
 
-    /* Desktop: vertical underline */
     left: 27px;
     width: 2.5px;
     top: ${({ top }) => `${top}px`};
@@ -129,7 +128,6 @@ export const Navigation: React.FC = () => {
         width: 0,
     });
 
-    // Helper to set line position (deduplicates and avoids infinite loop)
     function updateLinePosition() {
         const idx = sectionIds.indexOf(activeSection);
         const node = linkRefs.current[idx];
@@ -175,7 +173,6 @@ export const Navigation: React.FC = () => {
     // Update underline on active section/nav resize
     useLayoutEffect(() => {
         updateLinePosition();
-        // Only activeSection, sectionIds—not linePos!
         // eslint-disable-next-line
     }, [activeSection, sectionIds]);
 
@@ -201,7 +198,10 @@ export const Navigation: React.FC = () => {
                 {navLinks.map((link, i) => (
                     <li key={link.href} style={{ position: 'relative' }}>
                         <NavLink
-                            ref={(el) => (linkRefs.current[i] = el)}
+                            ref={(el) => {
+                                linkRefs.current[i] = el;
+                                // no return!
+                            }}
                             href={link.href}
                             $active={activeSection === link.href}
                         >
