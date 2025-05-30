@@ -7,7 +7,7 @@ import Projects from '@/components/Projects';
 import { Section } from '@/components/Section';
 import ThemeToggle from '@/components/ThemeToggle';
 
-export const Home = () => (
+const Home = () => (
     <>
         <Navigation />
         <Section id='home' $first>
