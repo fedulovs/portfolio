@@ -128,22 +128,26 @@ const experiences: ExperienceItem[] = [
 const Experience = () => {
     return (
         <SlideInFromLeft>
-            {experiences.map((exp) => (
-                <ExperienceContainer key={exp.period + exp.company}>
-                    <TimeLine>{exp.period}</TimeLine>
-                    <ExperienceInfo>
-                        <h3>
-                            {exp.company} - {exp.title}
-                        </h3>
-                        <p>{exp.description}</p>
-                        <SkillTags>
-                            {exp.skills.map((skill) => (
-                                <SkillBubble key={skill}>{skill}</SkillBubble>
-                            ))}
-                        </SkillTags>
-                    </ExperienceInfo>
-                </ExperienceContainer>
-            ))}
+            <div style={{ minHeight: 1 }}>
+                {experiences.map((exp) => (
+                    <ExperienceContainer key={exp.period + exp.company}>
+                        <TimeLine>{exp.period}</TimeLine>
+                        <ExperienceInfo>
+                            <h3>
+                                {exp.company} - {exp.title}
+                            </h3>
+                            <p>{exp.description}</p>
+                            <SkillTags>
+                                {exp.skills.map((skill) => (
+                                    <SkillBubble key={skill}>
+                                        {skill}
+                                    </SkillBubble>
+                                ))}
+                            </SkillTags>
+                        </ExperienceInfo>
+                    </ExperienceContainer>
+                ))}
+            </div>
         </SlideInFromLeft>
     );
 };

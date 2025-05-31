@@ -200,7 +200,6 @@ export const Navigation: React.FC = () => {
                         <NavLink
                             ref={(el) => {
                                 linkRefs.current[i] = el;
-                                // no return!
                             }}
                             href={link.href}
                             $active={activeSection === link.href}

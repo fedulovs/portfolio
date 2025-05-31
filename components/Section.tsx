@@ -54,5 +54,7 @@ export const SectionContent = styled.div<{ $visible: boolean }>`
     transform: translateX(-100%);
     transition: opacity 0.5s, transform 0.5s;
     will-change: opacity, transform;
+    display: block;
+    min-height: 1px;
     ${({ $visible }) => $visible && visibleStyle}
 `;
